@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum UX - Rodrigo Santamaria Martinez</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(90deg, #0f0c29, #302b63, #24243e);
+            color: #00eaff;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.8);
+            border: 2px solid #00eaff;
+            box-shadow: 0 0 20px #00eaff;
+            border-radius: 15px;
+            animation: glow 1.5s infinite alternate;
+        }
+        h1, h2 {
+            color: #ff00ff;
+            text-shadow: 0 0 10px #ff00ff;
+        }
+        .section {
+            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards ease-out;
+        }
+        a {
+            color: #ff00ff;
+            text-decoration: none;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+        a:hover {
+            color: #00eaff;
+            text-shadow: 0 0 15px #00eaff;
+        }
+        @keyframes glow {
+            0% { box-shadow: 0 0 15px #00eaff; }
+            100% { box-shadow: 0 0 25px #00eaff; }
+        }
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Rodrigo Santamaria Martinez</h1>
+        <img src="profilePicture.jpeg" width="300" height="350">
+        <p>Diseñador UX creando experiencias digitales futuristas y envolventes.</p>
+        
+        <div class="section">
+            <h2>Experiencia UX</h2>
+            <p>Certificación en Diseño UX por Google. Experiencia en diseño centrado en el usuario, wireframes y prototipos.</p>
+        </div>
+
+        <div class="section">
+            <h2>Proyectos UX</h2>
+            <ul>
+                <li><strong>Plataforma museo nexus (version mobil):</strong> <a href="https://www.figma.com/proto/yoVDtN9nYnTv74aXFJafFl/Nexus-hi-fi?node-id=19-192&starting-point-node-id=19%3A192&t=FKq39pSs1hn5SzoB-" target="_blank">Ver prototipo</a> | <a href="https://docs.google.com/presentation/d/1n8oxf5e7_-dyseXlAqXO_lYfrsmof-5wf89HHoXOU74/edit?usp=sharing" target="_blank">Ver diapositivas</a></li>
+                <li><strong>Plataforma museo nexus (version de escritorio):</strong> <a href="https://www.figma.com/proto/agy0HO3PATNo9nTcgDSvuY/Untitled?node-id=1-6154&t=wf9tkBEv7zYNIGqi-1" target="_blank">Ver prototipo</a> | <a href="https://docs.google.com/presentation/d/1tx59hOzxrDoJUUMrRWnJ6z3bEfzabW5q9G0a3td7Zes/edit?usp=sharing" target="_blank">Ver diapositivas</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Contacto</h2>
+            <p>Email: <a href="mailto:2230404@upv.edu.com">2230404@upv.edu.com</a></p>
+            <p>Número de celular: <a>834 193 7440</a></p> 
+        </div>
+    </div>
+</body>
+</html>
