@@ -12,7 +12,6 @@
             margin: 0;
             padding: 0;
             background: linear-gradient(90deg, #0f0c29, #302b63, #24243e);
-            color: #00eaff;
             text-align: center;
             overflow-x: hidden;
         }
@@ -25,6 +24,12 @@
             box-shadow: 0 0 20px #00eaff;
             border-radius: 15px;
             animation: glow 1.5s infinite alternate;
+        }
+        p {
+            color: white;
+        }
+        .highlight {
+            color: #00eaff;
         }
         h1, h2 {
             color: #ff00ff;
@@ -40,6 +45,9 @@
             color: #ff00ff;
             text-decoration: none;
             transition: color 0.3s, text-shadow 0.3s;
+        }
+        li {
+            color:#00eaff;
         }
         a:hover {
             color: #00eaff;
@@ -59,11 +67,22 @@
     <div class="container">
         <h1>Rodrigo Santamaria Martinez</h1>
         <img src="profilePicture.jpeg" width="300" height="350">
-        <p>Diseñador UX creando experiencias digitales futuristas y envolventes.</p>
+        <p class="highlight">Diseñador UX creando experiencias digitales futuristas y envolventes.</p>
         
         <div class="section">
             <h2>Sobre mi</h2>
             <p>Estudiante de Ingeniería en Tecnologías de la Información con interés en el desarrollo de software y diseño de experiencia de usuario. Con iniciativa, disposición para aprender y experiencia en proyectos académicos que integran tanto el trabajo en equipo como el uso de herramientas tecnológicas actuales. Comprometido con el crecimiento profesional y en constante búsqueda de nuevos retos que permitan aplicar y ampliar los conocimientos adquiridos.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Habilidades</h2>
+            <p>
+                Diseño UX/UI <br>
+                Prototipado <br>
+                Investigación de usuarios <br>
+                Herramientas: Figma <br>
+                HTML, CSS, JavaScript, React <br>
             </p>
         </div>
 
@@ -87,8 +106,8 @@
 
         <div class="section">
             <h2>Contacto</h2>
-            <p>Email: <a href="mailto:2230404@upv.edu.com">2230404@upv.edu.com</a></p>
-            <p>Número de celular: <a>834 193 7440</a></p> 
+            <p class="highlight">Email: <a href="mailto:2230404@upv.edu.com">2230404@upv.edu.com</a></p>
+            <p class="highlight">Número de celular: <a>834 193 7440</a></p> 
         </div>
     </div>
 </body>
